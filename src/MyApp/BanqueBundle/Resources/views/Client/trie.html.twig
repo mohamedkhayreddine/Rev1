@@ -1,0 +1,15 @@
+<h2>liste des comptes </h2>
+<table border="1">
+    <tr>
+        <td>Client</td>
+        <td>RiB</td>
+        <td>Solde</td>
+    </tr>
+    {%  for i in m %}
+        <tr>
+            <td>{{ i.Client.NomPrenom }}</td>
+            <td>{{ i.RIB }}</td>
+            <td>{{ i.solde }}</td>
+        </tr>
+    {% endfor %}
+</table>

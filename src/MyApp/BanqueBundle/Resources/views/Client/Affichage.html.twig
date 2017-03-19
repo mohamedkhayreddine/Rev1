@@ -1,0 +1,13 @@
+<h2> La liste des Clients </h2>
+{% for i in data %}
+    <lu>
+        <li>CIN : {{ i.cIN }}</li>
+        <li>Nom et Prenom : {{ i.nomprenom }}</li>
+        <li>Adresse : {{ i.adres }}</li>
+        <li>Num Telephone : {{ i.tel }}</li>
+    </lu>
+    <br>
+    <a href="{{ path('AjoutCompte',{'cin': i.cIN}) }}" >Gérer Compte Client </a>
+    <br>
+    **************************************************
+{% endfor %}

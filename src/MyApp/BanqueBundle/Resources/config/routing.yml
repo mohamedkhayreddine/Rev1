@@ -1,0 +1,18 @@
+my_app_banque_homepage:
+    path:     /
+    defaults: { _controller: MyAppBanqueBundle:Default:index }
+ListeClients:
+    path:     /list
+    defaults: { _controller: MyAppBanqueBundle:Client:afficher }
+AjoutCompte:
+    path:     /ajout/{cin}
+    defaults: { _controller: MyAppBanqueBundle:Client:ajoutCompte }
+Versement:
+    path:     /verser/{rib}
+    defaults: { _controller: MyAppBanqueBundle:Client:verser }
+Supprimer:
+    path:     /supp/{rib}
+    defaults: { _controller: MyAppBanqueBundle:Client:suprimer }
+Trier:
+    path:     /tri
+    defaults: { _controller: MyAppBanqueBundle:Client:trie }
